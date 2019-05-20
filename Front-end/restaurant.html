@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Food Delivery </title>
+    <link rel="stylesheet" type="text/css" href="./main.css">
+    <script type="text/javascript" src='./main.js'></script>
+    <link rel="stylesheet" href="https://unpkg.com/flexboxgrid2@7.2.1/flexboxgrid2.css">
+    <link rel="stylesheet" href="https://unpkg.com/normalize.css@7.0.0/normalize.css">
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-5 col-md-2 col-lg-3">
+                    <div class="logo">
+                        <a href="index.html"><img src="images/logo.png"></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-5 desktop-only tablet-only">
+                    <div class="options">
+                        <a href="#">
+                            <div class="when-btn" id="when-btn" onclick="changeColor()">
+                                ASAP
+                            </div>
+                        </a>
+                        <span style="padding: 0 10px">to</span>
+                        <a href="#">
+                            <div class="to-btn">
+                                <img class="icon" src="./images/location.svg">Ensias Rabat
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-7 col-md-4">
+                    <div class="header__auth">
+                        <a class="header__login-btn" href="#">Sign In</a>
+                        <a class="header__register-btn" href="#">Register</a>
+                        <a href="#"><img class="header__basket" src="./images/basket.png"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="restaurant">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-7">
+                    <div class="restaurant-card">
+                        <h1 class="restaurant-card__name"> Restaurant 1 </h1>
+                        <div class="restaurant-card__info">
+                            <span class="restaurant-card__prices">$$$</span>
+                        </div>
+                        <div class="restaurant-card__delivery">
+                            <p class="restaurant-card__delivery-time">40 - 50 Min</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="food-nav">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="food-nav__list">
+                        <a href="#" class="food-nav__item food-nav__item_active">Starters</a>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="foods-list">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h2 class="foods-list__type">Starters</h2>
+                    <hr class="foods-list__type__line mobile-only">
+                </div>
+                <div class="col-xs-12 col-lg-6">
+                    <div class="foods-list__item">
+                        <div class="foods-list__info">
+                            <p class="foods-list__name">Fish of the day</p>
+                            <p class="foods-list__description">Tarakihi or Hoki</p>
+                            <p class="foods-list__price">24 $</p>
+                        </div>
+                        <img class="foods-list__img" src="images/food1.png">
+                    </div>
+                </div>
+                <div class="col-xs-12 col-lg-6">
+                    <div class="foods-list__item">
+                        <div class="foods-list__info">
+                            <p class="foods-list__name">Fish &amp Chips</p>
+                            <p class="foods-list__description"><br></p>
+                            <p class="foods-list__price">14 $</p>
+                        </div>
+                        <img class="foods-list__img" src="images/food2.png">
+                    </div>
+                </div>
+                <div class="col-xs-12 col-lg-6">
+                    <div class="foods-list__item">
+                        <div class="foods-list__info">
+                            <p class="foods-list__name">Thai Salad</p>
+                            <p class="foods-list__description"><br></p>
+                            <p class="foods-list__price">30 $</p>
+                        </div>
+                        <img class="foods-list__img" src="images/food3.png">
+                    </div>
+                </div>
+                <div class="col-xs-12 col-lg-6">
+                    <div class="foods-list__item">
+                        <div class="foods-list__info">
+                            <p class="foods-list__name">Eggs Bene</p>
+                            <p class="foods-list__description"><br></p>
+                            <p class="foods-list__price">32 $</p>
+                        </div>
+                        <img class="foods-list__img" src="images/food4.png">
+                    </div>
+                </div>
+                <div class="col-xs-12 col-lg-6">
+                    <div class="foods-list__item">
+                        <div class="foods-list__info">
+                            <p class="foods-list__name">Smoked Salmon</p>
+                            <p class="foods-list__description"><br></p>
+                            <p class="foods-list__price">24 $</p>
+                        </div>
+                        <img class="foods-list__img" src="images/food5.png">
+                    </div>
+                </div>
+                <div class="col-xs-12 col-lg-6">
+                    <div class="foods-list__item">
+                        <div class="foods-list__info">
+                            <p class="foods-list__name">Ham &amp Cheese</p>
+                            <p class="foods-list__description"><br></p>
+                            <p class="foods-list__price">12 $</p>
+                        </div>
+                        <img class="foods-list__img" src="images/food6.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <img src="./images/logo.png" class="logo logo_white">
+                    <hr class="rectangle"></hr>
+                </div>
+                <div class="col-xs-7 col-md-4">
+                    <div class="footer__language">
+                        <select>
+							<option selected>English</option>
+							<option>Russian</option>
+						</select>
+                    </div>
+                    <p class="footer__hashtag-text"><span style="color: #49A144">#</span>UberEats</p>
+                    <div class="sm">
+                        <a href="#"><img src="./images/facebook.svg"></a>
+                        <a href="#"><img src="./images/twitter.svg"></a>
+                        <a href="#"><img src="./images/instagram.svg"></a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-4">
+                    <div class="footer__nav">
+                        <a href="#">About UberEats</a>
+                        <a href="#">Become a Delivery Partner</a>
+                        <a href="#">Become a Restaurant Partner</a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-4">
+                    <div class="footer__nav">
+                        <a href="#">See all cities</a>
+                        <a href="#">Pricing</a>
+                        <a href="#">Help</a>
+                        <a href="#">FAQs</a>
+                    </div>
+                </div>
+                <div class="col-xs-12">
+                    <div class="footer__apps">
+                        <hr class="rectangle"></hr>
+                        <div class="footer__apps-btns">
+                            <a href="#"><img class="appstore-btn" src="./images/appstore.png"></a>
+                            <a href="#"><img class="googleplay-btn" src="./images/googleplay.png"></a>
+                        </div>
+                        <hr class="rectangle"></hr>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-4">
+                    <div class="footer__copyright-nav">
+                        <p>© 2019 Uber Technologies Inc.</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-4">
+                    <div class="footer__copyright-nav">
+                        <a href="#">Privacy</a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-4">
+                    <div class="footer__copyright-nav">
+                        <a href="#">Terms</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="up-btn">
+        <a href="#"><img src="./images/arrow.svg"></a>
+    </div>
+</body>
+
+</html>
